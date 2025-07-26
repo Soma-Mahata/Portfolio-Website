@@ -66,7 +66,7 @@
             e.preventDefault();
             
         
-            const resumeUrl = "My-Resume.pdf";
+            const resumeUrl = "My_Resume.pdf";
             
             // Show notification
             notification.classList.add('show');

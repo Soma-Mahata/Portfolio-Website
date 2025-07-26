@@ -33,22 +33,6 @@
             });
         });
 
-        // Profession text animation
-        // const professions = ['Web Developer', 'UI/UX Designer', 'Frontend Engineer', 'Creative Coder'];
-        // let currentIndex = 0;
-        // const professionElement = document.getElementById('profession');
-
-        // function updateProfession() {
-        //     professionElement.style.opacity = '0';
-            
-        //     setTimeout(() => {
-        //         currentIndex = (currentIndex + 1) % professions.length;
-        //         professionElement.textContent = professions[currentIndex];
-        //         professionElement.style.opacity = '1';
-        //     }, 500);
-        // }
-
-        // setInterval(updateProfession, 3000);
 
         // Form submission
         const contactForm = document.getElementById('contact-form');
@@ -81,7 +65,7 @@
         resumeDownloadBtn.addEventListener('click', function(e) {
             e.preventDefault();
             
-            // In a real implementation, this would be the path to your actual PDF file
+        
             const resumeUrl = "My-Resume.pdf";
             
             // Show notification
@@ -92,9 +76,9 @@
                 notification.classList.remove('show');
             }, 3000);
             
-            // In a real implementation, this would trigger the actual download
-            // window.location.href = resumeUrl;
             
-            // For demo purposes, we'll just show the notification
+                 window.location.href = resumeUrl;
+            
+        
         });
     (function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9648028795187a01',t:'MTc1MzQwODI2Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();
